@@ -43,7 +43,7 @@
       <p>{#each links as [href, nome]}<a href={resolve(href)}>{nome}</a><br />{/each}</p>
     </div>
   </div>
-  <p class="wrap legal">© 2027 Tessitura Idiomas (demonstração). Nenhuma matrícula feita aqui é real.</p>
+  <p class="wrap legal">© 2026 Tessitura Idiomas (demonstração). Nenhuma matrícula feita aqui é real.</p>
 </footer>
 
 <style>
