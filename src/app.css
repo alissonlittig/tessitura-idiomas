@@ -1,0 +1,28 @@
+:root {
+  --papel: #f6f1e7; --papel2: #ede5d4; --tinta: #14231f; --tinta2: #3b4a45; --musgo: #1d3a32;
+  --terra: #b4452e; --ocre: #e9a96b; --linha: #d9cfba; --branco: #fffdf8;
+  --serif: 'Fraunces Variable', Georgia, serif; --sans: 'Inter Variable', system-ui, sans-serif;
+  --raio: 16px; --sombra: 0 1px 0 #fff inset, 0 10px 30px -14px rgba(20, 35, 31, .28);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; font: 400 16px/1.6 var(--sans); color: var(--tinta); background: var(--papel); overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.08; letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.5rem, 7vw, 4.8rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+h3 { font-size: 1.3rem; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--terra); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: min(1160px, 100% - 2.5rem); margin-inline: auto; }
+.eyebrow { font: 600 .78rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--terra); }
+.lead { font-size: 1.15rem; color: var(--tinta2); max-width: 54ch; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: 0 1.5rem; border-radius: 999px; border: 1.5px solid var(--tinta); background: var(--tinta); color: var(--papel); font: 600 .95rem var(--sans); text-decoration: none; cursor: pointer; transition: transform .2s, background .2s, color .2s; }
+.btn:hover { transform: translateY(-2px); background: var(--musgo); }
+.btn.sec { background: transparent; color: var(--tinta); }
+.btn.sec:hover { background: var(--tinta); color: var(--papel); }
+.btn:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+.chip { display: inline-block; padding: .22rem .7rem; border-radius: 999px; font: 600 .74rem var(--sans); background: var(--papel2); color: var(--tinta2); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
